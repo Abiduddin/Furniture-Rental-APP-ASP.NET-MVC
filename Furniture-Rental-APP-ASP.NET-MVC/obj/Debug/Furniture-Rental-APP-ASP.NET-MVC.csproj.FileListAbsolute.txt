@@ -84,3 +84,6 @@ E:\Work Place\project\github\Furniture-Rental-APP-ASP.NET-MVC\Furniture-Rental-A
 E:\Work Place\project\github\Furniture-Rental-APP-ASP.NET-MVC\Furniture-Rental-APP-ASP.NET-MVC\bin\EntityFramework.SqlServer.xml
 E:\Work Place\project\github\Furniture-Rental-APP-ASP.NET-MVC\Furniture-Rental-APP-ASP.NET-MVC\obj\Debug\Furniture_Rental_APP_ASP.NET_MVC.Migrations.version1.resources
 E:\Work Place\project\github\Furniture-Rental-APP-ASP.NET-MVC\Furniture-Rental-APP-ASP.NET-MVC\obj\Debug\Furniture-Rental-APP-ASP.NET-MVC.csproj.GenerateResource.cache
+E:\Work Place\project\github\Furniture-Rental-APP-ASP.NET-MVC\Furniture-Rental-APP-ASP.NET-MVC\obj\Debug\Furniture_Rental_APP_ASP.NET_MVC.Migrations.AddMembershipType.resources
+E:\Work Place\project\github\Furniture-Rental-APP-ASP.NET-MVC\Furniture-Rental-APP-ASP.NET-MVC\obj\Debug\Furniture_Rental_APP_ASP.NET_MVC.Migrations.AddCustomerClass.resources
+E:\Work Place\project\github\Furniture-Rental-APP-ASP.NET-MVC\Furniture-Rental-APP-ASP.NET-MVC\obj\Debug\Furniture_Rental_APP_ASP.NET_MVC.Migrations.PopulateMembershipTypes.resources
