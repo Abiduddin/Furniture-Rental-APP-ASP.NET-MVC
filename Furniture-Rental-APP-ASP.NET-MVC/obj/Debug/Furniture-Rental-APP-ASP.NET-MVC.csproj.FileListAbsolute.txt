@@ -87,3 +87,14 @@ E:\Work Place\project\github\Furniture-Rental-APP-ASP.NET-MVC\Furniture-Rental-A
 E:\Work Place\project\github\Furniture-Rental-APP-ASP.NET-MVC\Furniture-Rental-APP-ASP.NET-MVC\obj\Debug\Furniture_Rental_APP_ASP.NET_MVC.Migrations.AddMembershipType.resources
 E:\Work Place\project\github\Furniture-Rental-APP-ASP.NET-MVC\Furniture-Rental-APP-ASP.NET-MVC\obj\Debug\Furniture_Rental_APP_ASP.NET_MVC.Migrations.AddCustomerClass.resources
 E:\Work Place\project\github\Furniture-Rental-APP-ASP.NET-MVC\Furniture-Rental-APP-ASP.NET-MVC\obj\Debug\Furniture_Rental_APP_ASP.NET_MVC.Migrations.PopulateMembershipTypes.resources
+E:\Work Place\project\github\Furniture-Rental-APP-ASP.NET-MVC\Furniture-Rental-APP-ASP.NET-MVC\obj\Debug\Furniture_Rental_APP_ASP.NET_MVC.Migrations.ApplyAnnotationsToClasses.resources
+E:\Work Place\project\github\Furniture-Rental-APP-ASP.NET-MVC\Furniture-Rental-APP-ASP.NET-MVC\obj\Debug\Furniture_Rental_APP_ASP.NET_MVC.Migrations.AddControllers.resources
+E:\Work Place\project\github\Furniture-Rental-APP-ASP.NET-MVC\Furniture-Rental-APP-ASP.NET-MVC\obj\Debug\Furniture_Rental_APP_ASP.NET_MVC.Migrations.UpdateMembershipModel.resources
+E:\Work Place\project\github\Furniture-Rental-APP-ASP.NET-MVC\Furniture-Rental-APP-ASP.NET-MVC\obj\Debug\Furniture_Rental_APP_ASP.NET_MVC.Migrations.MembershipDataUpdate.resources
+E:\Work Place\project\github\Furniture-Rental-APP-ASP.NET-MVC\Furniture-Rental-APP-ASP.NET-MVC\obj\Debug\Furniture_Rental_APP_ASP.NET_MVC.Migrations.EditModelsData.resources
+E:\Work Place\project\github\Furniture-Rental-APP-ASP.NET-MVC\Furniture-Rental-APP-ASP.NET-MVC\obj\Debug\Furniture_Rental_APP_ASP.NET_MVC.Migrations.AddBirthdateCustomer.resources
+E:\Work Place\project\github\Furniture-Rental-APP-ASP.NET-MVC\Furniture-Rental-APP-ASP.NET-MVC\obj\Debug\Furniture_Rental_APP_ASP.NET_MVC.Migrations.AddCategoryAndBrand.resources
+E:\Work Place\project\github\Furniture-Rental-APP-ASP.NET-MVC\Furniture-Rental-APP-ASP.NET-MVC\obj\Debug\Furniture_Rental_APP_ASP.NET_MVC.Migrations.UpdateFurniture.resources
+E:\Work Place\project\github\Furniture-Rental-APP-ASP.NET-MVC\Furniture-Rental-APP-ASP.NET-MVC\obj\Debug\Furniture_Rental_APP_ASP.NET_MVC.Migrations.PopulateCategoryAndBrand.resources
+E:\Work Place\project\github\Furniture-Rental-APP-ASP.NET-MVC\Furniture-Rental-APP-ASP.NET-MVC\obj\Debug\Furniture_Rental_APP_ASP.NET_MVC.Migrations.UpdateFurnitureModel.resources
+E:\Work Place\project\github\Furniture-Rental-APP-ASP.NET-MVC\Furniture-Rental-APP-ASP.NET-MVC\obj\Debug\Furniture_Rental_APP_ASP.NET_MVC.Migrations.UpdateFurnitureData.resources

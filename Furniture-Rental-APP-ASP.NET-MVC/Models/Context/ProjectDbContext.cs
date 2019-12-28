@@ -11,5 +11,7 @@ namespace Furniture_Rental_APP_ASP.NET_MVC.Models.Context
         public DbSet<Furniture> Furnitures { get; set; }
         public DbSet<Customer> Customers { get; set; }
         public DbSet<MembershipType> MembershipTypes { get; set; }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<Brand> Brands { get; set; }
     }
 }

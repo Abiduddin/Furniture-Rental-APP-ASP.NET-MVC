@@ -1,0 +1,33 @@
+﻿@model Furniture_Rental_APP_ASP.NET_MVC.Models.Customer
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>@Model.Name</h4>
+    <hr/>
+    <dl class="dl-horizontal">
+        <dt>Subscribed to Newsletter</dt>
+        @{
+            if (Model.IsSubscribedToNewsLetter.ToString() == "True")
+            {
+                <dd>Yes</dd>
+            }
+            else
+            {
+                <dd>No</dd>
+            }
+        }
+        <dt>Membership</dt>
+        <dd>@Model.MembershipType.Name</dd>
+        @if (!@Model.BirthDate.IsEmpty())
+        {
+            <dt>Birth Date</dt>
+            <dd>@Model.BirthDate</dd>
+        }
+    </dl>
+</div>
+
+

@@ -1,0 +1,28 @@
+﻿@model IEnumerable<Furniture_Rental_APP_ASP.NET_MVC.Models.Customer>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<div>
+    <h4>Customers</h4>
+    <hr/>
+    <table class="table table-bordered table-responsive table-hover">
+        <tr>
+            <th>Name</th>
+            <th>Discount Rate</th>
+        </tr>
+        
+        @{
+            foreach (var customer in Model)
+            {
+                <tr>
+                    <td>@Html.ActionLink(customer.Name,"Details","Customers",new {customer.Id},null)</td>
+                    <td>@customer.MembershipType.DiscountRate%</td>
+                </tr>
+            }
+        }
+    </table>
+</div>
+

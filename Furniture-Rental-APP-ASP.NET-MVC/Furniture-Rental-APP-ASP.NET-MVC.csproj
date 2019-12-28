@@ -132,6 +132,9 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CustomersController.cs" />
+    <Compile Include="Controllers\CustomersTestController.cs" />
+    <Compile Include="Controllers\FurnituresController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -152,7 +155,53 @@
     <Compile Include="Migrations\201912190430003_PopulateMembershipTypes.Designer.cs">
       <DependentUpon>201912190430003_PopulateMembershipTypes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201912191658038_ApplyAnnotationsToClasses.cs" />
+    <Compile Include="Migrations\201912191658038_ApplyAnnotationsToClasses.Designer.cs">
+      <DependentUpon>201912191658038_ApplyAnnotationsToClasses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201912191718128_AddControllers.cs" />
+    <Compile Include="Migrations\201912191718128_AddControllers.Designer.cs">
+      <DependentUpon>201912191718128_AddControllers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201912270618528_UpdateMembershipModel.cs" />
+    <Compile Include="Migrations\201912270618528_UpdateMembershipModel.Designer.cs">
+      <DependentUpon>201912270618528_UpdateMembershipModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201912270619490_MembershipDataUpdate.cs" />
+    <Compile Include="Migrations\201912270619490_MembershipDataUpdate.Designer.cs">
+      <DependentUpon>201912270619490_MembershipDataUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201912270644282_EditModelsData.cs" />
+    <Compile Include="Migrations\201912270644282_EditModelsData.Designer.cs">
+      <DependentUpon>201912270644282_EditModelsData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201912271157236_AddBirthdateCustomer.cs" />
+    <Compile Include="Migrations\201912271157236_AddBirthdateCustomer.Designer.cs">
+      <DependentUpon>201912271157236_AddBirthdateCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201912281716403_AddCategoryAndBrand.cs" />
+    <Compile Include="Migrations\201912281716403_AddCategoryAndBrand.Designer.cs">
+      <DependentUpon>201912281716403_AddCategoryAndBrand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201912281743462_UpdateFurniture.cs" />
+    <Compile Include="Migrations\201912281743462_UpdateFurniture.Designer.cs">
+      <DependentUpon>201912281743462_UpdateFurniture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201912281744175_PopulateCategoryAndBrand.cs" />
+    <Compile Include="Migrations\201912281744175_PopulateCategoryAndBrand.Designer.cs">
+      <DependentUpon>201912281744175_PopulateCategoryAndBrand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201912281828164_UpdateFurnitureModel.cs" />
+    <Compile Include="Migrations\201912281828164_UpdateFurnitureModel.Designer.cs">
+      <DependentUpon>201912281828164_UpdateFurnitureModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201912281829472_UpdateFurnitureData.cs" />
+    <Compile Include="Migrations\201912281829472_UpdateFurnitureData.Designer.cs">
+      <DependentUpon>201912281829472_UpdateFurnitureData.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Brand.cs" />
+    <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Context\ProjectDbContext.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Furniture.cs" />
@@ -196,9 +245,19 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\_NavBar.cshtml" />
+    <Content Include="Views\CustomersTest\Create.cshtml" />
+    <Content Include="Views\CustomersTest\Delete.cshtml" />
+    <Content Include="Views\CustomersTest\Details.cshtml" />
+    <Content Include="Views\CustomersTest\Edit.cshtml" />
+    <Content Include="Views\CustomersTest\Index.cshtml" />
+    <Content Include="Views\Customers\Index.cshtml" />
+    <Content Include="Views\Customers\Details.cshtml" />
+    <Content Include="Views\Furnitures\Index.cshtml" />
+    <Content Include="Views\Furnitures\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\CustomerTest\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -225,6 +284,39 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201912190430003_PopulateMembershipTypes.resx">
       <DependentUpon>201912190430003_PopulateMembershipTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912191658038_ApplyAnnotationsToClasses.resx">
+      <DependentUpon>201912191658038_ApplyAnnotationsToClasses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912191718128_AddControllers.resx">
+      <DependentUpon>201912191718128_AddControllers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912270618528_UpdateMembershipModel.resx">
+      <DependentUpon>201912270618528_UpdateMembershipModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912270619490_MembershipDataUpdate.resx">
+      <DependentUpon>201912270619490_MembershipDataUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912270644282_EditModelsData.resx">
+      <DependentUpon>201912270644282_EditModelsData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912271157236_AddBirthdateCustomer.resx">
+      <DependentUpon>201912271157236_AddBirthdateCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912281716403_AddCategoryAndBrand.resx">
+      <DependentUpon>201912281716403_AddCategoryAndBrand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912281743462_UpdateFurniture.resx">
+      <DependentUpon>201912281743462_UpdateFurniture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912281744175_PopulateCategoryAndBrand.resx">
+      <DependentUpon>201912281744175_PopulateCategoryAndBrand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912281828164_UpdateFurnitureModel.resx">
+      <DependentUpon>201912281828164_UpdateFurnitureModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912281829472_UpdateFurnitureData.resx">
+      <DependentUpon>201912281829472_UpdateFurnitureData.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
