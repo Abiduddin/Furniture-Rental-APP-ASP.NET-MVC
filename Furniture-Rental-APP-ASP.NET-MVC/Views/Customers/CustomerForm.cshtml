@@ -1,0 +1,40 @@
+﻿@model Furniture_Rental_APP_ASP.NET_MVC.Models.ViewModels.CustomerFormViewModel
+@{
+    ViewBag.Title = "New";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h2>New Customer</h2>
+
+<br/>
+
+@using (Html.BeginForm("Create", "Customers"))
+{
+    <div class="form-group">
+        @Html.LabelFor(m=>m.Customer.Name)
+        @Html.TextBoxFor(m=>m.Customer.Name,null,new{@class="form-control"})
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m=>m.Customer.BirthDate)
+        @Html.TextBoxFor(m=>m.Customer.BirthDate,"{0:d MMM yyyy}",new{@class="form-control"})
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m=>m.Customer.MembershipTypeId)
+        @Html.DropDownListFor(m=>m.Customer.MembershipTypeId, new SelectList(Model.MembershipTypes,"Id","Name"),"Select Membership Type", new {@class="form-control"})
+    </div>
+
+    <div class="form-group">
+        <div class="form-check">
+            @Html.CheckBoxFor(m => m.Customer.IsSubscribedToNewsLetter,new {@class="form-check-input"})
+            @Html.LabelFor(m => m.Customer.IsSubscribedToNewsLetter,null,new{@class="form-check-label"})
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-outline-primary">Sign Up</button>
+    
+
+}
+

@@ -14,13 +14,15 @@ namespace Furniture_Rental_APP_ASP.NET_MVC.Models
         [StringLength(255)]
         public string Name { get; set; }
 
+        [Display(Name = "Date of Birth")]
+        public string BirthDate { get; set; }
+
+        [Display(Name = "Membership Type")]
+        public byte MembershipTypeId { get; set; }
+
+        [Display(Name = "Subscribed To NewsLetter?")]
         public bool IsSubscribedToNewsLetter { get; set; }
 
         public MembershipType MembershipType { get; set; }
-
-        public byte MembershipTypeId { get; set; }
-
-        public string BirthDate { get; set; }
-
     }
 }
