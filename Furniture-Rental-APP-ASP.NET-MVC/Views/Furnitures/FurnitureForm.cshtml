@@ -1,0 +1,57 @@
+﻿@model Furniture_Rental_APP_ASP.NET_MVC.Models.ViewModels.FurnitureFormViewModel
+@{
+    ViewBag.Title = "FurnitureForm";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>New Furniture</h2>
+<br />
+
+@using (Html.BeginForm("Save", "Furnitures"))
+{
+    <div class="form-group">
+        @Html.LabelFor(m => m.Furniture.Name)
+        @Html.TextBoxFor(m => m.Furniture.Name, null, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m=>m.Furniture.Name)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Furniture.BrandId)
+        @Html.DropDownListFor(m => m.Furniture.BrandId, new SelectList(Model.Brands, "Id", "Name"), "Select Brands", new { @class = "form-control" })
+        @Html.ValidationMessageFor(m=>m.Furniture.BrandId)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Furniture.CategoryId)
+        @Html.DropDownListFor(m => m.Furniture.CategoryId, new SelectList(Model.Categories, "Id", "Name"), "Select Category", new { @class = "form-control" })
+        @Html.ValidationMessageFor(m=>m.Furniture.CategoryId)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Furniture.Material)
+        @Html.TextBoxFor(m => m.Furniture.Material, null, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Furniture.Stock)
+        @Html.TextBoxFor(m => m.Furniture.Stock, null, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m=>m.Furniture.Stock)
+    
+    </div>
+
+
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Furniture.Color)
+        @Html.TextBoxFor(m => m.Furniture.Color, null, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Furniture.Model)
+        @Html.TextBoxFor(m => m.Furniture.Model, null, new { @class = "form-control" })
+    </div>
+
+    @Html.HiddenFor(m => m.Furniture.Id)
+    <button type="submit" class="btn btn-outline-primary">Save</button>
+}
+

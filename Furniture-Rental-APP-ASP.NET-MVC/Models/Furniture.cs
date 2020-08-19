@@ -16,10 +16,14 @@ namespace Furniture_Rental_APP_ASP.NET_MVC.Models
         
         public Brand Brand { get; set; }
 
+
+        [Required]
         public int BrandId { get; set; }
 
         public Category Category { get; set; }
 
+
+        [Required]
         public int CategoryId { get; set; }
 
         public string Material { get; set; }
@@ -28,6 +32,7 @@ namespace Furniture_Rental_APP_ASP.NET_MVC.Models
 
         public string Color { get; set; }
 
+        [Required]
         public int Stock { get; set; }
 
         //length height depth

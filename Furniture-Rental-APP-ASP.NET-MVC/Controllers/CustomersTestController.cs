@@ -37,14 +37,14 @@ namespace Furniture_Rental_APP_ASP.NET_MVC.Controllers
             return View(customer);
         }
 
-        // GET: CustomersTest/Create
+        // GET: CustomersTest/Save
         public ActionResult Create()
         {
             ViewBag.MembershipTypeId = new SelectList(db.MembershipTypes, "Id", "Id");
             return View();
         }
 
-        // POST: CustomersTest/Create
+        // POST: CustomersTest/Save
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]

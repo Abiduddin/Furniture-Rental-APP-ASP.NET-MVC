@@ -3,26 +3,34 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
-
 <div>
     <h4>Customers</h4>
-    <hr/>
-    <table class="table table-bordered table-responsive table-hover">
-        <tr>
-            <th>Name</th>
-            <th>Discount Rate</th>
-        </tr>
-        
-        @{
-            foreach (var customer in Model)
-            {
-                <tr>
-                    <td>@Html.ActionLink(customer.Name,"Edit","Customers",new {customer.Id},null)</td>
-                    <td>@customer.MembershipType.DiscountRate%</td>
-                </tr>
+    <hr />
+
+    <table class="table table-bordered  table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Discount Rate</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                var a = 1;
+                foreach (var customer in Model)
+                {
+                    <tr>
+                        <th scope="row">@a</th>
+                        <td>@Html.ActionLink(customer.Name, "Edit", "Customers", new { customer.Id }, null)</td>
+                        <td>@customer.MembershipType.DiscountRate%</td>
+                    </tr>
+                    a = a + 1;
+                }
             }
-        }
+        </tbody>
+
+
     </table>
 </div>
 

@@ -53,11 +53,24 @@ namespace Furniture_Rental_APP_ASP.NET_MVC.Controllers
         }
 
         [HttpPost]
-        public ActionResult Create(Customer customer)
+        public ActionResult Save(Customer customer)
         {
-            _context.Customers.Add(customer);
+            if (customer.Id == 0)
+            {
+                _context.Customers.Add(customer);
+                
+            }
+            else
+            {
+                var customerInDb = _context.Customers.Single(m => m.Id == customer.Id);
+                customerInDb.Id = customer.Id;
+                customerInDb.BirthDate = customer.BirthDate;
+                customerInDb.Name = customer.Name;
+                customerInDb.IsSubscribedToNewsLetter = customer.IsSubscribedToNewsLetter;
+            }
+
             _context.SaveChanges();
-            return Content("Saved");
+            return RedirectToAction("Index","Customers");
         }
 
         public ActionResult Edit(int id)

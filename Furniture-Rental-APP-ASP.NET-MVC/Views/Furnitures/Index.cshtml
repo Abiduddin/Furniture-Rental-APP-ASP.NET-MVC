@@ -3,26 +3,38 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>Furnitures</h2>
+<hr />
+@Html.ActionLink("Add Furniture","New","Furnitures",new{@class="btn btn-info"})
+<br/>
+<br/>
 
 <div>
-    <h4>Furnitures</h4>
-    <hr />
-    <table class="table table-bordered table-responsive table-hover">
-        <tr>
-            <th>Name</th>
-            <th>Category</th>
-        </tr>
+    
+    <table class="table table-bordered table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Category</th>
+            </tr>
+        </thead>
+        <tbody>
 
         @{
+            var a = 1;
             foreach (var furniture in Model)
             {
                 <tr>
+                    <th scope="row">@a</th>
                     <td>@Html.ActionLink(furniture.Name, "Details", "Furnitures", new { furniture.Id }, null)</td>
                     <td>@furniture.Category.Name</td>
                 </tr>
+                a = a + 1;
             }
         }
+        </tbody>    
+
+            
     </table>
 </div>
-
