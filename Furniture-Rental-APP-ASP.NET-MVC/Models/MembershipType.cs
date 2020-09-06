@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
+using Microsoft.Ajax.Utilities;
 
 namespace Furniture_Rental_APP_ASP.NET_MVC.Models
 {
@@ -20,5 +21,10 @@ namespace Furniture_Rental_APP_ASP.NET_MVC.Models
 
         [Required]
         public byte DiscountRate { get; set; }
+
+
+        public static readonly byte Unknown = 0;
+        public static readonly byte PayAsYouGo = 1;
+
     }
 }

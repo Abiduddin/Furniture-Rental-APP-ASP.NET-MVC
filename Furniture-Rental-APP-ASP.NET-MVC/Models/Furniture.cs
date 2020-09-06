@@ -18,12 +18,14 @@ namespace Furniture_Rental_APP_ASP.NET_MVC.Models
 
 
         [Required]
+        [Display(Name = "Brand")]
         public int BrandId { get; set; }
 
         public Category Category { get; set; }
 
 
         [Required]
+        [Display(Name = "Category")]
         public int CategoryId { get; set; }
 
         public string Material { get; set; }
@@ -33,6 +35,7 @@ namespace Furniture_Rental_APP_ASP.NET_MVC.Models
         public string Color { get; set; }
 
         [Required]
+        [Range(1,double.PositiveInfinity, ErrorMessage = "Value must be greater than 0")]
         public int Stock { get; set; }
 
         //length height depth

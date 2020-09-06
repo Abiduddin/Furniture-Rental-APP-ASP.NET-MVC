@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
+using Furniture_Rental_APP_ASP.NET_MVC.Models.BL;
 
 namespace Furniture_Rental_APP_ASP.NET_MVC.Models
 {
@@ -15,7 +16,8 @@ namespace Furniture_Rental_APP_ASP.NET_MVC.Models
         public string Name { get; set; }
 
         [Display(Name = "Date of Birth")]
-        public string BirthDate { get; set; }
+        [Min18YearsIfAMember]
+        public DateTime? BirthDate { get; set; }
 
         [Display(Name = "Membership Type")]
         public byte MembershipTypeId { get; set; }

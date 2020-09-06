@@ -9,22 +9,23 @@
 
 @using (Html.BeginForm("Save", "Furnitures"))
 {
+    @Html.ValidationSummary(true,"Please Fix those Error")
     <div class="form-group">
         @Html.LabelFor(m => m.Furniture.Name)
         @Html.TextBoxFor(m => m.Furniture.Name, null, new { @class = "form-control" })
-        @Html.ValidationMessageFor(m=>m.Furniture.Name)
+        @Html.ValidationMessageFor(m => m.Furniture.Name)
     </div>
 
     <div class="form-group">
         @Html.LabelFor(m => m.Furniture.BrandId)
         @Html.DropDownListFor(m => m.Furniture.BrandId, new SelectList(Model.Brands, "Id", "Name"), "Select Brands", new { @class = "form-control" })
-        @Html.ValidationMessageFor(m=>m.Furniture.BrandId)
+        @Html.ValidationMessageFor(m => m.Furniture.BrandId)
     </div>
 
     <div class="form-group">
         @Html.LabelFor(m => m.Furniture.CategoryId)
         @Html.DropDownListFor(m => m.Furniture.CategoryId, new SelectList(Model.Categories, "Id", "Name"), "Select Category", new { @class = "form-control" })
-        @Html.ValidationMessageFor(m=>m.Furniture.CategoryId)
+        @Html.ValidationMessageFor(m => m.Furniture.CategoryId)
     </div>
 
     <div class="form-group">
@@ -35,8 +36,8 @@
     <div class="form-group">
         @Html.LabelFor(m => m.Furniture.Stock)
         @Html.TextBoxFor(m => m.Furniture.Stock, null, new { @class = "form-control" })
-        @Html.ValidationMessageFor(m=>m.Furniture.Stock)
-    
+        @Html.ValidationMessageFor(m => m.Furniture.Stock)
+
     </div>
 
 
@@ -52,6 +53,11 @@
     </div>
 
     @Html.HiddenFor(m => m.Furniture.Id)
+    @Html.AntiForgeryToken()
     <button type="submit" class="btn btn-outline-primary">Save</button>
 }
 
+@section scripts
+{
+    @Scripts.Render("~/bundles/jqueryval")
+}

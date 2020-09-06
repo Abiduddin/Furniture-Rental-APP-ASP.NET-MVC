@@ -98,3 +98,4 @@ E:\Work Place\project\github\Furniture-Rental-APP-ASP.NET-MVC\Furniture-Rental-A
 E:\Work Place\project\github\Furniture-Rental-APP-ASP.NET-MVC\Furniture-Rental-APP-ASP.NET-MVC\obj\Debug\Furniture_Rental_APP_ASP.NET_MVC.Migrations.PopulateCategoryAndBrand.resources
 E:\Work Place\project\github\Furniture-Rental-APP-ASP.NET-MVC\Furniture-Rental-APP-ASP.NET-MVC\obj\Debug\Furniture_Rental_APP_ASP.NET_MVC.Migrations.UpdateFurnitureModel.resources
 E:\Work Place\project\github\Furniture-Rental-APP-ASP.NET-MVC\Furniture-Rental-APP-ASP.NET-MVC\obj\Debug\Furniture_Rental_APP_ASP.NET_MVC.Migrations.UpdateFurnitureData.resources
+E:\Work Place\project\github\Furniture-Rental-APP-ASP.NET-MVC\Furniture-Rental-APP-ASP.NET-MVC\obj\Debug\Furniture_Rental_APP_ASP.NET_MVC.Migrations.EditCustomerClass.resources

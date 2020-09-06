@@ -56,6 +56,7 @@ namespace Furniture_Rental_APP_ASP.NET_MVC.Controllers
         {
             var viewModel = new FurnitureFormViewModel
             {
+                Furniture = new Furniture(),
                 Brands = _context.Brands.ToList(),
                 Categories = _context.Categories.ToList()
                 
@@ -64,6 +65,8 @@ namespace Furniture_Rental_APP_ASP.NET_MVC.Controllers
             return View("FurnitureForm", viewModel);
         }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Save(Furniture furniture)
         {
             if (!ModelState.IsValid)

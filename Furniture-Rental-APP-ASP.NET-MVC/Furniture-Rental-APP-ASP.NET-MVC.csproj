@@ -201,7 +201,12 @@
     <Compile Include="Migrations\201912281829472_UpdateFurnitureData.Designer.cs">
       <DependentUpon>201912281829472_UpdateFurnitureData.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202009051036403_EditCustomerClass.cs" />
+    <Compile Include="Migrations\202009051036403_EditCustomerClass.Designer.cs">
+      <DependentUpon>202009051036403_EditCustomerClass.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\BL\Min18YearsIfAMember.cs" />
     <Compile Include="Models\Brand.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Context\ProjectDbContext.cs" />
@@ -417,6 +422,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201912281829472_UpdateFurnitureData.resx">
       <DependentUpon>201912281829472_UpdateFurnitureData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009051036403_EditCustomerClass.resx">
+      <DependentUpon>202009051036403_EditCustomerClass.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
